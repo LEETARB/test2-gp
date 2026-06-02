@@ -1,0 +1,30 @@
+name: ITPC CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build Docker Images
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build backend image
+        run: docker build -t itpc-backend ./backend
+
+      - name: Build frontend image
+        run: docker build -t itpc-frontend ./frontend
+
+      - name: Validate Docker Compose
+        run: docker compose config

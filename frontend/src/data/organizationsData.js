@@ -318,4 +318,3 @@ export const organizationsData = {
     تاريخآخردفعة: '2024-01-25',
   },
 };
-
