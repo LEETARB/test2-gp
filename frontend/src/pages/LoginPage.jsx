@@ -46,7 +46,7 @@ const API = import.meta.env.VITE_API_BASE_URL;
               <BrandLogo className="h-24 w-24 rounded-[28px] brand-glow" imageClassName="scale-[1.04]" />
               <div>
                 <h1 className="text-3xl xl:text-4xl font-bold leading-tight">
-                   اتصالات ومعلوماتية كربلاء
+                   اتصالات  كربلاء
                 </h1>
                 <p className="mt-2 text-indigo-100/95 text-base">نظام إدارة العقود والدفعات والجهات</p>
               </div>
