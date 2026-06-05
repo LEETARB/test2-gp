@@ -1,11 +1,11 @@
 services:
 
-  backend:
-    build: ./backend
-    container_name: itpc-backend
-    restart: unless-stopped
-    depends_on:
-      - postgres
+ backend:
+  build: ./backend
+  container_name: itpc-backend
+  volumes:
+    - ./backend/itpc.db:/app/itpc.db
+  restart: unless-stopped
 
   frontend:
     build: ./frontend
