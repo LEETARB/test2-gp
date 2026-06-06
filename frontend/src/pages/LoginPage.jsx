@@ -41,7 +41,7 @@ const API = import.meta.env.VITE_API_BASE_URL;
       <div className="w-full max-w-6xl mx-auto grid lg:grid-cols-[1.05fr_0.95fr] gap-6 lg:gap-8 items-stretch">
         <section className="hidden lg:flex page-hero flex-col justify-between min-h-[560px]">
           <div>
-            <div className="brand-chip">الأدوات  الرسمية</div>
+            <div className="brand-chip">اتصالات</div>
             <div className="mt-6 flex items-center gap-4">
               <BrandLogo className="h-24 w-24 rounded-[28px] brand-glow" imageClassName="scale-[1.04]" />
               <div>
